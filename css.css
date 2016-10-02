@@ -84,6 +84,26 @@ section {
 	background-image: url(back.svg);
 	background-color: #FFF;
 }
+#git {
+	background-image: url(github.svg);
+	height: 40px;
+	width: 50px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-right: 2px solid #FFF;
+	position: absolute;
+	top: 0px;
+	right: 220px;
+	bottom: 0px;
+	margin: auto;
+}
+#TSS {
+	background-image:url(TSS.png)
+}
+#wach{
+	background-image:url(wach.png)
+}
 #chalky {
 	background-image: url(board.png);
 }
