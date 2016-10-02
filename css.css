@@ -100,6 +100,9 @@ section {
 #doodle {
 	background-image: url(dud.png);
 }
+#mut8 {
+	background-image: url(mut8.png);
+}
 #home > div {
 	position: absolute;
 	top: 30px;
