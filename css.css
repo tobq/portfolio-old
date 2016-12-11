@@ -38,6 +38,10 @@ body {
 	transition: background 0.3s ease;
 	/*box-shadow: 0px 5px 8px rgba(0,0,0,0.4);*/
 }
+#h.o {
+	background: #000;
+	transition: background 0.1s ease;
+}
 #t {
 	font-size: 40px;
 	color: #FFF;
@@ -192,8 +196,12 @@ section {
 	display: inline-block;
 	text-align: center;
 	margin: auto;
-	transition: opacity 0.4s ease 0.3s;
+	transition: opacity 0.4s ease;
 	opacity: 0;
+}
+#goc.o {
+	opacity: 1;
+	transition: opacity 0.4s ease 0.3s;
 }
 #home > div {
 	position: absolute;
