@@ -207,7 +207,7 @@ div#pop {
 	width: 500px;
 	max-width: 100%;
 	font-family: bold;
-	text-shadow: -2px -2px #FFF;
+	text-shadow: 4px 0px #FFF;
 	font-size: 40px;
 }
 div#proj {
