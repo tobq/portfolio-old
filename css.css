@@ -196,7 +196,7 @@ section {
 	display: inline-block;
 	text-align: center;
 	margin: auto;
-	transition: opacity 0.4s ease;
+	transition: opacity 0.2s ease;
 	opacity: 0;
 }
 #goc.o {
@@ -214,11 +214,12 @@ div#pop {
 	bottom: 0px;
 	right: 0px;
 	padding: 30px 40px;
-	width: 500px;
+	width: 400px;
+	max-height: calc(100vh - 100px);
 	max-width: 100%;
 	font-family: bold, def, Arial;
 	text-shadow: 4px 0px #FFF;
-	font-size: 40px;
+	font-size: 30px;
 }
 div#proj {
 	color: #FFF;
