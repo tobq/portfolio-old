@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71995be4-efd7-45d3-888d-18af66e814a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back.svg" afterPath="$PROJECT_DIR$/back.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css.css" afterPath="$PROJECT_DIR$/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="71995be4-efd7-45d3-888d-18af66e814a2" name="Default" comment="" />
     <ignored path="tobi-site.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -209,12 +205,12 @@
       <workItem from="1475332729461" duration="2044000" />
       <workItem from="1475348119256" duration="39000" />
       <workItem from="1475358656707" duration="40000" />
-      <workItem from="1481424900876" duration="2467000" />
+      <workItem from="1481424900876" duration="2498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4590000" />
+    <option name="totallyTimeSpent" value="4621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="852" y="0" width="755" height="867" extended-state="0" />
