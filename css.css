@@ -81,7 +81,7 @@ section {
 	line-height: 70px;
 }
 #home {
-	background-image: url(back.svg);
+	background-image: url(back.png);
 	background-color: #FFF;
 }
 #git {
@@ -122,16 +122,6 @@ section {
 }
 #mut8 {
 	background-image: url(mut8.png);
-}
-#home > div {
-	position: absolute;
-	top: 30px;
-	right: 40px;
-	color: #000;
-	width: 300px;
-	font-size: 27px;
-	text-align: right;
-	text-shadow: 1px 1px #FFF;
 }
 .url {
 	display: inline-block;
@@ -204,19 +194,35 @@ section {
 	transition: opacity 0.7s ease;
 	opacity: 0;
 }
+#proj,#god,#gou {
+	cursor: pointer;
+}
+#home > div {
+	position: absolute;
+	color: #000;
+	font-size: 27px;
+}
 div#proj {
-	color: #FFF;
-	text-shadow: 1px 1px #000;
 	bottom: 30px;
-	top: auto;
-	text-align: left;
 	left: 30px;
-	right: auto;
-	width: auto;
-	padding-right:  30px;
-	background-image: url(more.svg);
-	background-position: right;
-	background-repeat: no-repeat;
+	color: #FFF;
+	text-shadow: none;
+	padding: 0px 15px 0px 25px;
+	line-height: 60px;
+	border-radius: 30px;
+	background-color: rgba(0,0,0,0.3);
+	background: -webkit-linear-gradient(-45deg,rgba(0,0,0,0.3),rgba(50,50,50,0.2));
+	background: -o-linear-gradient(-45deg,rgba(0,0,0,0.3),rgba(50,50,50,0.2));
+	background: -moz-linear-gradient(-45deg,rgba(0,0,0,0.3),rgba(50,50,50,0.2));
+	background: linear-gradient(-45deg,rgba(0,0,0,0.3),rgba(50,50,50,0.2));
+}
+div#pop {
+	top: 0px;
+	right: 0px;
+	width: 300px;
+	padding: 30px 40px;
+	text-shadow: 1px 1px #FFF;
+	text-align: right;
 }
 #god, #gou {
 	box-sizing: border-box;
