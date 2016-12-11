@@ -80,7 +80,7 @@ section {
 	line-height: 70px;
 }
 #home {
-	background-image: url(back.svg);
+	background-image: url(back2.svg);
 	background-position: center;
 }
 #git {
@@ -201,16 +201,18 @@ section {
 }
 div#pop {
 	box-sizing: border-box;
-	top: 0px;
+	bottom: 0px;
 	right: 0px;
 	padding: 30px 40px;
-	width: 380px;
+	width: 500px;
 	max-width: 100%;
-	text-shadow: 1px 1px #FFF;
+	font-family: bold;
+	text-shadow: -2px -2px #FFF;
+	font-size: 40px;
 }
 div#proj {
 	color: #FFF;
-	bottom: 30px;
+	top: 30px;
 	text-align: left;
 	left: 30px;
 	padding-right:  30px;
