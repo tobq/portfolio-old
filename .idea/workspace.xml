@@ -38,8 +38,8 @@
       <file leaf-file-name="css.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="209" column="18" selection-start-line="209" selection-start-column="18" selection-end-line="209" selection-end-column="18" />
+            <state relative-caret-position="409">
+              <caret line="233" column="80" selection-start-line="233" selection-start-column="80" selection-end-line="233" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -88,8 +88,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="718" />
-    <option name="width" value="889" />
+    <option name="x" value="602" />
+    <option name="width" value="1005" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -218,18 +218,18 @@
       <workItem from="1475332729461" duration="2044000" />
       <workItem from="1475348119256" duration="39000" />
       <workItem from="1475358656707" duration="40000" />
-      <workItem from="1481424900876" duration="3521000" />
+      <workItem from="1481424900876" duration="4087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5644000" />
+    <option name="totallyTimeSpent" value="6210000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="718" y="0" width="889" height="867" extended-state="0" />
+    <frame x="602" y="0" width="1005" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2050401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1809909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -345,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="209" column="18" selection-start-line="209" selection-start-column="18" selection-end-line="209" selection-end-column="18" />
+        <state relative-caret-position="409">
+          <caret line="233" column="80" selection-start-line="233" selection-start-column="80" selection-end-line="233" selection-end-column="80" />
           <folding />
         </state>
       </provider>

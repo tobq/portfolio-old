@@ -213,12 +213,25 @@ div#pop {
 div#proj {
 	color: #FFF;
 	top: 30px;
-	text-align: left;
-	left: 30px;
+	left: 40px;
 	padding-right:  30px;
 	background-image: url(more.svg);
 	background-position: right;
 	background-repeat: no-repeat;
+}
+div#proj:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: -15px;
+	left: -40px;
+	background: #FFF;
+	background: -webkit-linear-gradient(left,rgba(255,255,255,0.3),rgba(255,255,255,0.6));
+	background: -o-linear-gradient(left,rgba(255,255,255,0.3),rgba(255,255,255,0.6));
+	background: -moz-linear-gradient(left,rgba(255,255,255,0.3),rgba(255,255,255,0.6));
+	background: linear-gradient(left,rgba(255,255,255,0.3),rgba(255,255,255,0.6));
 }
 #proj,#god, #gou {
 	cursor: pointer;
