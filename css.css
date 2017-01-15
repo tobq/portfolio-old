@@ -109,6 +109,24 @@ section {
 #wach{
 	background-image:url(wach.png)
 }
+#pool {
+	background: #000;
+	background: -webkit-linear-gradient(#000,#050505);
+	background: -o-linear-gradient(#000,#050505);
+	background: -moz-linear-gradient(#000,#050505);
+	background: linear-gradient(#000,#050505);
+}
+#pool-cam {
+	border-radius: 5px;
+	max-width: 100%;
+	width: 480px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+}
 #chalky {
 	background-image: url(board.png);
 }
