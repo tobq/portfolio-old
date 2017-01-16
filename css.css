@@ -111,10 +111,10 @@ section {
 }
 #pool {
 	background: #000;
-	background: -webkit-linear-gradient(#000,#050505);
-	background: -o-linear-gradient(#000,#050505);
-	background: -moz-linear-gradient(#000,#050505);
-	background: linear-gradient(#000,#050505);
+	background: -webkit-linear-gradient(#000,#050908);
+	background: -o-linear-gradient(#000,#050908);
+	background: -moz-linear-gradient(#000,#050908);
+	background: linear-gradient(#000,#050908);
 }
 #pool-cam {
 	border-radius: 5px;
@@ -126,6 +126,9 @@ section {
 	right: 0px;
 	bottom: 0px;
 	margin: auto;
+}
+#note {
+    font-size: 12px;
 }
 #chalky {
 	background-image: url(board.png);
