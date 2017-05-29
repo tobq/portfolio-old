@@ -34,13 +34,15 @@ body {
 	right: -10px;
 	top: 0px;
 	z-index: 2;
-	background: rgba(0,0,0,0);
-	transition: background 0.4s ease 0.3s;
+	background: rgba(0,0,0,0.5);
+	transition: all 0.4s ease 0.3s;
+    padding-bottom: 82px;
 	/*box-shadow: 0px 5px 8px rgba(0,0,0,0.4);*/
 }
 #h.o {
 	background: #000;
-	transition: background 0.3s ease;
+    padding-bottom: 0px;
+	transition: all 0.3s ease;
 }
 #t {
 	font-size: 40px;
@@ -85,8 +87,10 @@ section {
 	line-height: 70px;
 }
 #home {
-	background-image: url(back.svg);
-	background-position: center;
+	background-image: url(sun.jpg);
+    background-size:  cover;
+	background-position: top center;
+    background-repeat: no-repeat;
 	height: 100vh;
 }
 #git {
@@ -98,9 +102,8 @@ section {
 	background-position: center;
 	border-right: 2px solid #FFF;
 	position: absolute;
-	top: 0px;
+	top: 30px;
 	right: 220px;
-	bottom: 0px;
 	margin: auto;
 }
 #TSS {
@@ -235,13 +238,14 @@ div#pop {
 	box-sizing: border-box;
 	bottom: 0px;
 	right: 0px;
+    left: 0px;
+    text-align: center;
 	padding: 30px 40px;
-	width: 400px;
 	max-height: calc(100vh - 100px);
-	max-width: 100%;
 	font-family: bold, def, Arial;
-	text-shadow: 4px 0px #FFF;
-	font-size: 30px;
+    background: rgba(0,0,0,0.3);
+    color: #FFF;
+	font-size: 20px;
 }
 div#proj {
 	color: #FFF;
@@ -251,6 +255,11 @@ div#proj {
 	background-image: url(more.svg);
 	background-position: right;
 	background-repeat: no-repeat;
+    z-index: 3;
+    opacity: 1;
+}
+div#proj.o {
+    opacity: 0;
 }
 div#proj:after {
 	content: "";

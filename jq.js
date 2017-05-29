@@ -4,8 +4,7 @@ function next() {
 			if (i >= -1) {
 				if (scr) {
 					if (0 == i) {
-						$("#goc").addClass("o");
-						$("#h").addClass("o");
+					    $("#goc, #h, #proj").addClass("o");
 					}
 					scr = false;
 					$("html, body").stop().animate({
@@ -24,8 +23,7 @@ function prev() {
 		if (i > 0) {
 			if (scr) {
 				if (1 == i) {
-					$("#goc").removeClass("o")
-					$("#h").removeClass("o");
+				    $("#goc, #h, #proj").removeClass("o");
 					$("html, body").stop().animate({
 						scrollTop : $($("section")[--i]).offset().top
 					}, 700, "easeOutCubic");

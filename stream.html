@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qoo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial;
+            transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        #blur {
+            background-color: rgba(0, 0, 0, .9);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        #prompt {
+            color: white;
+            text-align: center;
+            padding: 30px;
+            background-color: #222;
+            margin: auto;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            max-width: 80vw;
+            width: 400px;
+            max-height: 80vh;
+            height: 300px;
+            z-index: 2;
+        }
+
+        .hide {
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
+        html, body {
+            background: black;
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
+
+        #con {
+            position: relative;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            max-height: 50vh;
+            background: rgba(50, 50, 50, .9);
+        }
+
+        #con.empty > #yin {
+            height: 200px;
+        }
+
+        #con.empty > #add {
+            top: 75px;
+        }
+
+        #yin:hover, #yin:focus {
+            background-color: rgba(0, 0, 0, .2);
+        }
+
+        input, button {
+            transition: .3s ease;
+            border: none;
+            outline: none;
+            display: inline-block;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        #yin {
+            transition-property: background-color, height;
+            background-color: transparent;
+            height: 100px;
+            width: 100%;
+        }
+
+        #add {
+            transition-property: box-shadow, top;
+            position: absolute;
+            background-color: #333;
+            right: 50px;
+            top: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        #add:hover {
+            box-shadow: 0 3px rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+<body>
+<!--<iframe width="100%" height="100%"-->
+        <!--src="https://www.youtube.com/embed/pR7sf5NdSMw?list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8" frameborder="0"-->
+        <!--allowfullscreen>-->
+<!--</iframe>-->
+<!--<form id="con" class="empty" onsubmit="newVid(event); return false">-->
+    <!--<input id="yin" autocomplete="off"/>-->
+    <!--<button type="submit" id="add">+</button>-->
+<!--</form>-->
+<!--<div id="prompt">Do you want to add the playlist or the video?</div>-->
+<!--<div id="blur"></div>-->
+<video id="vid"></video>
+</body>
+<script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
+<script>
+    var APIKey = "AIzaSyDc_7O3V4MNdnO0IDNawy6HYoMKEoiR7MI",
+        blur = document.getElementById("blur"),
+        prompt = document.getElementById("prompt");
+
+    function Get(Url) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", Url, false);
+        xmlHttp.send(null);
+        return JSON.parse(xmlHttp.responseText);
+    }
+    function newVid(e) {
+        var yin = window.yin.value,
+            playlist, PLVids;
+        if (!yin) return;
+        if (playlist = yin.match(/list=[A-Za-z0-9_-]{34}/)[0] &&
+                (PLVids = Get("https://www.googleapis.com/youtube/v3/playlistItems?playlistId=" + playlist + "&key=" + APIKey).items)) {
+            var videos = Get();
+        }
+        ID = yin.toLowerCase().match(/(embed\/|v=)[A-Za-z0-9_-]{11}/);
+        for (var match in ID) {
+            Get("https://www.googleapis.com/youtube/v3/videos?part=id&id=Tr5WcGSDqDg&key=" + APIKey);
+        }
+    }
+    blur.onclick = function (){
+        blur.className = prompt.className = "hide";
+    }
+    window.onkeydown = function (e) {
+        if ((e || window.event).keyCode == 27) blur.onclick();
+    };
+
+    var yin = document.getElementById("yin"),
+        con = document.getElementById("con");
+</script>
+</html>
