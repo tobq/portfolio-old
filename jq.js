@@ -1,94 +1,38 @@
+var goc = document.getElementById("goc");
+var god = document.getElementById("god");
+var gou = document.getElementById("gou");
+var projects = document.getElementById("proj");
+var slide = document.getElementById("slide");
+var sections = document.getElementsByTagName("section"), focused = 0;
+var scrolling = false, SCROLL_DUR = 700;
+
+window.onwheel = function MouseWheelHandler(e) {
+	var e = window.event || e;
+	if ((e.wheelDelta || -e.detail) < 0) next();
+	else prev();
+
+	e.stopPropagation();
+	e.preventDefault();
+	return false;
+}
+
+god.onclick = projects.onclick = next;
+gou.onclick = prev;
+
 function next() {
-	if ($("body").height() - ($(window).scrollTop() + $(window).height() - 100) > 0 || 3 > i) {
-		if (i < $("section").length - 1) {
-			if (i >= -1) {
-				if (scr) {
-					if (0 == i) {
-					    $("#goc, #h, #proj").addClass("o");
-					}
-					scr = false;
-					$("html, body").stop().animate({
-						scrollTop : $($("section")[++i]).offset().top - 100
-					}, 700, "easeOutCubic");
-					setTimeout(function() {
-						scr = true;
-					}, 700);
-				}
-			}
-		}
-	}
+	if (scrolling || focused + 2 > sections.length) return false;
+	scrolling = true;
+	var section = sections[++focused];
+	slide.style.bottom = focused * window.innerHeight + "px";
+	projects.className = goc.className = "o";
+	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
+
 function prev() {
-	if (i < $("section").length) {
-		if (i > 0) {
-			if (scr) {
-				if (1 == i) {
-				    $("#goc, #h, #proj").removeClass("o");
-					$("html, body").stop().animate({
-						scrollTop : $($("section")[--i]).offset().top
-					}, 700, "easeOutCubic");
-				} else $("html, body").stop().animate({
-					scrollTop : $($("section")[--i]).offset().top - 100
-				}, 700, "easeOutCubic");
-				scr = false;
-				setTimeout(function() {
-					scr = true;
-				}, 700);
-			}
-		}
-	}
+	if (scrolling || focused < 1) return false;
+	scrolling = true;
+	var section = sections[--focused];
+	slide.style.bottom = focused * window.innerHeight + "px";
+	if (!focused) projects.className = goc.className = "";
+	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
-function now() {
-	if (scr) {
-		scr = false;
-		$("html, body").stop().animate({
-			scrollTop : $($("section")[i]).offset().top - 100
-		}, 700, "easeOutCubic");
-		setTimeout(function() {
-			scr = true;
-		}, 700);
-	}
-}
-function displaywheel(e) {
-	if (scr) {
-		var evt = window.event || e;
-		var o = evt.detail ? -120 * evt.detail : evt.wheelDelta;
-		if (0 > o) {
-			next();
-		} else {
-			prev();
-		}
-		e.preventDefault();
-		e.stopPropagation();
-	}
-}
-var i = 0;
-var Tim;
-var scr = true;
-$(window).resize(function() {
-	clearTimeout(Tim);
-	Tim = setTimeout(function() {
-		now();
-	}, 500);
-});
-var mousewheelevt = /Firefox/i.test(navigator.userAgent) ? "DOMMouseScroll" : "mousewheel";
-document.attachEvent ? document.attachEvent("on" + mousewheelevt, displaywheel) : document.addEventListener && document.addEventListener(mousewheelevt, displaywheel, false), $("body").swipe({
-	swipeUp : function(e, dataAndEvents, deepDataAndEvents, ignoreMethodDoesntExist) {
-		next();
-	},
-	swipeDown : function(e, dataAndEvents, deepDataAndEvents, ignoreMethodDoesntExist) {
-		prev();
-	},
-	threshold : 100,
-	allowPageScroll : "vertical"
-}), $("#god").click(function() {
-	next();
-}), $("#gou").click(function() {
-	prev();
-}), $("#proj").click(function() {
-	next();
-});
-$(window).on("beforeunload", function() {
-	$(window).scrollTop(0);
-});
-now();
