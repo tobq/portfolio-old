@@ -117,7 +117,7 @@ section {
 }
 
 #home {
-	background-image: url(sun.jpg);
+	background-image: url(i/sun.jpg);
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -125,11 +125,11 @@ section {
 }
 
 #TSS {
-	background-image: url(TSS.png)
+	background-image: url(i/TSS.png)
 }
 
 #wach {
-	background-image: url(wach.png)
+	background-image: url(i/wach.png)
 }
 
 #pool {
@@ -157,28 +157,20 @@ section {
 }
 
 #chalky {
-	background-image: url(board.png);
+	background-image: url(i/board.png);
 }
 
 #math {
-	background-image: url(math.png);
+	background-image: url(i/math.png);
 	background-position: center 70px;
 }
 
 #sand {
-	background-image: url(sand.png);
-}
-
-#stream {
-	background-image: url(stream.png);
-}
-
-#doodle {
-	background-image: url(dud.png);
+	background-image: url(i/sand.png);
 }
 
 #mut8 {
-	background-image: url(mut8.png);
+	background-image: url(i/mut8.png);
 }
 
 .url {
