@@ -30,7 +30,7 @@ body {
 	transition: bottom 0.7s ease;
 }
 
-#h {
+header {
 	line-height: 100px;
 	position: fixed;
 	left: 0px;
@@ -41,7 +41,7 @@ body {
 	transition: height 0.4s ease 0.3s;
 }
 
-	#h.o {
+	header.o {
 		background: #000;
 		padding-bottom: 0px;
 		transition: all 0.3s ease;
