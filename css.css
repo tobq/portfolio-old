@@ -316,4 +316,7 @@ div#proj {
 		width: 100%;
 		margin-bottom: 0px;
 	}
+	#t {
+		opacity: 0;
+	}
 }
