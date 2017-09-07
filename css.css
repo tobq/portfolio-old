@@ -122,7 +122,6 @@ section {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
-	height: 100vh;
 }
 
 #TSS {
@@ -145,12 +144,22 @@ section {
 	border-radius: 5px;
 	max-width: 100%;
 	width: 480px;
+	max-width: 90%;
+	max-width: calc(100% - 40px);
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
 	margin: auto;
+}
+
+.date {
+	color: #777;
+	font-style: italic;
+	text-align: right;
+	font-size: 15px;
+	margin-bottom: 10px;
 }
 
 #note {
@@ -199,7 +208,7 @@ section {
 	right: 0px;
 	margin: 20px auto;
 	color: #FFF;
-	padding: 30px;
+	padding: 20px 30px 30px 30px;
 	background: rgba(20,20,20,0.96);
 	transition: margin-bottom ease 0.3s, width ease 0.3s;
 	overflow-x: hidden;
@@ -258,23 +267,15 @@ section {
 	box-shadow: 0px -3px 6px rgba(0,0,0,0.2);
 }
 
-#home > div {
-	position: absolute;
-	color: #000;
-	font-size: 27px;
-	text-align: right;
-}
-
 div#pop {
-	box-sizing: border-box;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
-	text-align: center;
-	padding: 30px 40px;
-	max-height: calc(100vh - 100px);
 	color: #FFF;
 	font-size: 20px;
+	position: absolute;
+	text-align: center;
+	padding: 30px 40px;
 }
 
 div#proj {
