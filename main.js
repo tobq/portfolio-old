@@ -23,7 +23,7 @@ function next() {
 	if (scrolling || focused + 2 > sections.length) return false;
 	scrolling = true;
 	var section = sections[++focused];
-	slide.style.bottom = focused * window.innerHeight + "px";
+	setTop();
 	projects.className = goc.className = "o";
 	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
@@ -32,7 +32,12 @@ function prev() {
 	if (scrolling || focused < 1) return false;
 	scrolling = true;
 	var section = sections[--focused];
-	slide.style.bottom = focused * window.innerHeight + "px";
+	setTop();
 	if (!focused) projects.className = goc.className = "";
 	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
+
+function setTop() {
+	slide.style.bottom = focused * window.innerHeight + "px";
+}
+window.onresize = setTop
