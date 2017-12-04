@@ -4,7 +4,7 @@ var gou = document.getElementById("gou");
 var projects = document.getElementById("proj");
 var slide = document.getElementById("slide");
 var sections = document.getElementsByTagName("section"), focused = 0;
-var scrolling = false, SCROLL_DUR = 100;
+var scrolling = false, SCROLL_DUR = 200;
 
 window.onwheel = function MouseWheelHandler(e) {
 	var e = window.event || e;
