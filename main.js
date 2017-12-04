@@ -8,10 +8,8 @@ var scrolling = false, SCROLL_DUR = 700;
 
 window.onwheel = function MouseWheelHandler(e) {
 	var e = window.event || e;
-	if ((e.wheelDelta || -e.detail) < 0) next();
+	if (e.wheelDelta < 0 || 0 > e.detail) next();
 	else prev();
-
-	e.stopPropagation();
 	e.preventDefault();
 	return false;
 }
@@ -20,24 +18,20 @@ god.onclick = projects.onclick = next;
 gou.onclick = prev;
 
 function next() {
-	if (scrolling || focused + 2 > sections.length) return false;
-	scrolling = true;
-	var section = sections[++focused];
+	++focused;
 	setTop();
-	projects.className = goc.className = "o";
-	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
 
 function prev() {
-	if (scrolling || focused < 1) return false;
-	scrolling = true;
-	var section = sections[--focused];
+	--focused;
 	setTop();
-	if (!focused) projects.className = goc.className = "";
-	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
 
 function setTop() {
+	if (scrolling || focused < 0 || focused + 1 > sections.length) return false;
+	scrolling = true;
 	slide.style.bottom = focused * window.innerHeight + "px";
+	projects.className = goc.className = focused ? "o" : "";
+	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
 window.onresize = setTop
