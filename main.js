@@ -18,19 +18,18 @@ god.onclick = projects.onclick = next;
 gou.onclick = prev;
 
 function next() {
-	if (focused + 2 > sections.length) return false;
+	if (scrolling || focused + 2 > sections.length) return false;
 	++focused;
 	setTop();
 }
 
 function prev() {
-	if (focused < 1) return false;
+	if (scrolling || focused < 1) return false;
 	--focused;
 	setTop();
 }
 
 function setTop() {
-	if (scrolling) return false;
 	scrolling = true;
 	slide.style.bottom = focused * window.innerHeight + "px";
 	projects.className = goc.className = focused ? "o" : "";
