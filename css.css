@@ -95,6 +95,12 @@ header {
 		border-right: 2px solid #FFF;
 	}
 
+#proj {
+	background: none;
+	outline: none;
+	
+}
+
 a {
 	text-decoration: none !important;
 	color: #FFF;
