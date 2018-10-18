@@ -14,9 +14,12 @@ window.onwheel = function MouseWheelHandler(e) {
 	return false;
 }
 
-god.onclick = projects.onclick = next;
+god.onclick = next;
 gou.onclick = prev;
-
+projets.onclick = functioni(){
+	focused = 1;
+	setTop();
+}
 function next() {
 	if (scrolling || focused + 2 > sections.length) return false;
 	++focused;
