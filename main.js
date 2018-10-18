@@ -38,4 +38,4 @@ function setTop() {
 	projects.className = goc.className = focused ? "o" : "";
 	setTimeout(function () { scrolling = false }, SCROLL_DUR);
 }
-window.onresize = setTop
+window.onresize = window.onload = setTop
