@@ -95,12 +95,6 @@ header {
 		border-right: 2px solid #FFF;
 	}
 
-#proj {
-	background: none;
-	outline: none;
-	
-}
-
 a {
 	text-decoration: none !important;
 	color: #FFF;
@@ -287,7 +281,9 @@ div#pop {
 	padding: 30px 40px;
 }
 
-div#proj {
+button#proj {
+	background: none;
+	outline: none;
 	display: inline-block;
 	position: absolute;
 	margin-left: 40px;
@@ -306,12 +302,12 @@ div#proj {
 	overflow: hidden;
 }
 
-	div#proj.o {
+	button#proj.o {
 		opacity: 0;
 		height: 0px;
 	}
 
-	div#proj:after {
+	button#proj:after {
 		content: "";
 		display: block;
 		width: 100%;
