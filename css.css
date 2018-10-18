@@ -48,16 +48,19 @@ header {
 	}
 
 #t {
+	font-size: 40px;
+	color: #FFF;
+	text-indent: 48px;
+	font-family: logo;
+}
+
+.no-select {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	font-size: 40px;
-	color: #FFF;
-	text-indent: 48px;
-	font-family: logo;
 }
 
 #buttons {
