@@ -16,7 +16,7 @@ window.onwheel = function (e) {
 
 god.onclick = next;
 gou.onclick = prev;
-projets.onclick = function(){
+projects.onclick = function(){
 	focused = 1;
 	setTop();
 }
