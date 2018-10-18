@@ -6,7 +6,7 @@ var slide = document.getElementById("slide");
 var sections = document.getElementsByTagName("section"), focused = 0;
 var scrolling = false, SCROLL_DUR = 200;
 
-window.onwheel = function MouseWheelHandler(e) {
+window.onwheel = function (e) {
 	var e = window.event || e;
 	if (e.wheelDelta < 0 || 0 > e.detail) next();
 	else prev();
@@ -16,7 +16,7 @@ window.onwheel = function MouseWheelHandler(e) {
 
 god.onclick = next;
 gou.onclick = prev;
-projets.onclick = functioni(){
+projets.onclick = function(){
 	focused = 1;
 	setTop();
 }
