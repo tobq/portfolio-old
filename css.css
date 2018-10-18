@@ -284,6 +284,7 @@ div#pop {
 button#proj {
 	background: none;
 	outline: none;
+	border:none;
 	display: inline-block;
 	position: absolute;
 	margin-left: 40px;
